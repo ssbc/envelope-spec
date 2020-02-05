@@ -96,6 +96,7 @@ Where
 - `Derive` is the same derivation function described in the [key derivation][kd] section
 - `recipient_key` could be:
   - a private key for a group (symmetric key)
+  - a key for an individual feed (see [recipient encoding](./recipient_encoding.md))
   - a double-ratchet derived key for an individual (this option requires more info in the `header_extensions` + [extensions][e])
 
 Note these slots have no HMAC. This is because if you successfully extract `msg_key` from one of
