@@ -10,7 +10,7 @@ The binary encoding of ids is defined as the concatenation of:
 Note that "format" may close over how the type was encoded AND how that encoding was
 mapped into a particular key
 
-## Scuttlebutt Codes
+## Codes
 
  type code | referencing
 -----------|-------------
@@ -18,12 +18,13 @@ mapped into a particular key
  1         | a message
  2         | a blob
 
- format code | format      | specification
--------------|-------------|-----------------
- 0           | "classic"   | ...see JS stack
- 1           | gabby grove | ...see Go implementation
- 2           | hidden      | ...coming soon
+ format code | format          | specification
+-------------|------------- ---|-----------------
+ 0           | ssb/classic     | ...see JS stack
+ 1           | ssb/gabby grove | ...see Go implementation
+ 2           | ssb/cloaked     | see [private group spec](https://github.com/ssbc/private-groups-spec/tree/master/group/group-id)
 
+For canonical, machine-readable definitions, see `encoding/tfk.json`
 
 ## Example: A "classic" scuttlebutt msgId
 
