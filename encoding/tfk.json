@@ -1,0 +1,37 @@
+[
+  {
+    "type": "feed",
+    "formats": [
+      {
+        "format": "ssb/classic",
+        "sigil": "@",
+        "suffix": ".ed25519"
+      },
+      {
+        "format": "ssb/gabby-grove",
+        "sigil": "@",
+        "suffix": ".ggfeed-v1"
+      }
+    ]
+  },
+  {
+    "type": "msg",
+    "formats": [
+      {
+        "format": "ssb/classic",
+        "sigil": "%",
+        "suffix": ".sha256"
+      },
+      {
+        "format": "ssb/gabby-grove",
+        "sigil": "%",
+        "suffix": ".ggmsg-v1"
+      },
+      {
+        "format": "ssb/cloaked",
+        "sigil": "%",
+        "suffix": ".cloaked"
+      }
+    ]
+  }
+
