@@ -3,14 +3,15 @@
 The envelope spec defines the "cloaked" id for a message as:
 
 ```js
-var info = ["cloaked-msg-id", msg_id]
+var info = ["cloaked_msg_id", msg_id]
 var cloaked_id = HKDF.Expand(read_key, encode(info), 32)
 ```
 
 where:
-- `msg_id` is the publicly readable id for the message which has been enveloped
+- `msg_id` is the publicly readable id for the message which has been enveloped, in [TFK format][TFK]
 - `read_key` is the "read capability" key for the enveloped message (Note this is not the `msg_key`)
-- `encode` is SLP encode (see [encoding/slp.md](../encoding/slp.md))
+- `encode` is SLP encode (see [encoding/slp.md][SLP])
+- `cloaded_id` is the obfuscated `msg_id`, in [TFK format](TFK)
 
 ## Design
 
@@ -22,3 +23,5 @@ This means we have a safe "handle" which we can use in all contexts without leak
 e.g. who was involved a particular private communication.
 
 
+[SLP]: ../encoding/slp.md
+[TFK]: ../encoding/tfk.md
