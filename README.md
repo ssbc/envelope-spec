@@ -1,4 +1,4 @@
-# box2 spec
+# envelope spec
 
 :warning: **DRAFT STATUS** :warning:
 
@@ -7,13 +7,13 @@ Initially it will support communication for large groups which share a public ke
 (secret key cryptography / symmetric keys), but it has also been designed to support
 forward-secure secret-key cryptography (a little like Signal's double-ratchet).
 
-box2 assumes each message is part of append-only chain (with a unique `feed_id`), 
+_envelope_ assumes each message is part of append-only chain (with a unique `feed_id`), 
 made up of backlinked messages such that each message has a unique previous message with 
 a unique id (`prev_msg_id`)
 
 ## Anatomy
 
-After boxing, a complete box2 message looks like this:
+After boxing, a complete envelope message looks like this:
 
 ```
  +---------------------------------------+
@@ -140,7 +140,7 @@ The section which contains the plaintext which we've boxed.
 
 ## Unboxing algorithm
 
-When you receive a box2 message, the only things you know are:
+When you receive a envelope message, the only things you know are:
 - the length of the whole box (doesn't tell you much, as there may be padding)
 - where the key-slots start (because the [header_box][hb] is exactly 32 bytes)
 - where this message was posted (we call this it's "context", and the boxing is bound to this)
@@ -200,8 +200,8 @@ this gives access to header metadata and body but not ephemeral keys.
 
 ## Implementations
 
-- Go: https://github.com/cryptoscope/ssb/tree/private-groups/private/box2
-- Node.js: https://github.com/ssbc/private-box2
+- Go: https://github.com/cryptoscope/ssb/tree/private-groups/private/envelope
+- Node.js: https://github.com/ssbc/envelope-js
 
 
 

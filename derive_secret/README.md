@@ -5,7 +5,7 @@ It's defined as:
 
 ```js
 function Derive (key, labels, length) {
-  var info = ['box2', feed_id, prev_msg_id].concat(labels)
+  var info = ['envelope', feed_id, prev_msg_id].concat(labels)
 
   return HKDF.Expand(key, encode(info), length)
 }

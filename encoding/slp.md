@@ -49,7 +49,7 @@ Ordered key-value datasets can be encoded by first constructing and then encodin
 To derive the read key from the message key, we perform a derivation with the info argument of HKDF.Expand set to the encoding of the following key-value list, displayed here to look a bit like a JSON object:
 ```js
 {
-	"purpose": "box2",
+	"purpose": "envelope",
 	"feed": "@feedID", // this is a placeholder
 	"prev": "%msgID",   // this is a placeholder
 	"type": "read key"
@@ -58,33 +58,35 @@ To derive the read key from the message key, we perform a derivation with the in
 
 This would be list-encoded by alternating between keys and values:
 ```
-("purpose", "box2", "type", "read key", "feed", "@feedID", "prev", "%msgID")
+("purpose", "envelope", "type", "read key", "feed", "@feedID", "prev", "%msgID")
 ```
 
 Here the "schema" is the expected keys and their values, along with the order in which they're encoded.
 
 The encoding of this list is
 ```
-     p u r p o s e       b o x 2       f e e d       @ f e e d I D       p r e v       @ m s g I D       t y p e       r e a d   k e y
-0700 707572706f7365 0400 626f7832 0400 66646463 0700 40666565644944 0400 70726576 0600 406d73674944 0400 74797065 0800 72656164206b6579
-^^^^                ^^^^          ^^^^          ^^^^                ^^^^          ^^^^              ^^^^          ^^^^
-length              length        length        length              length        length            length        length
+e n v e l o p e 
+656e76656c6f7065
+     p u r p o s e       e n v e l o p e       f e e d       @ f e e d I D       p r e v       @ m s g I D       t y p e       r e a d   k e y
+0700 707572706f7365 0800 656e76656c6f7065 0400 66646463 0700 40666565644944 0400 70726576 0600 406d73674944 0400 74797065 0800 72656164206b6579
+^^^^                ^^^^                  ^^^^          ^^^^                ^^^^          ^^^^              ^^^^          ^^^^
+length              length                length        length              length        length            length        length
 ```
 
 ### Example 2 - encode values (key implied by order)
 
 Alternatively, we could also ditch the keys and just use the values. Using the same data from the previous example, we would get this list:
 ```
-("box2", "@feedID", "%msgID", "read key")
+("envelope", "@feedID", "%msgID", "read key")
 ```
 That list encodes to
 ```
-     b o x 2       @ f e e d I D       @ m s g I D       r e a d   k e y
-0400 626f7832 0700 40666565644944 0600 406d73674944 0800 72656164206b6579
-^^^^          ^^^^                ^^^^              ^^^^
-length        length              length            length
+     e n v e l o p e       @ f e e d I D       @ m s g I D       r e a d   k e y
+0800 656e76656c6f7065 0700 40666565644944 0600 406d73674944 0800 72656164206b6579
+^^^^                  ^^^^                ^^^^              ^^^^
+length                length              length            length
 ```
-Note that this is more in line with the idea of using schemas. For example, the schema for the box2 read key dictates that what follows is first a feed ID, and then a message ID. Also, in reality the feed and message IDs would be the binary encoding of the ID.
+Note that this is more in line with the idea of using schemas. For example, the schema for the envelope `read_key` dictates that what follows is first a feed ID, and then a message ID. Also, in reality the feed and message IDs would be the binary encoding of the ID.
 
 
 ## Code
