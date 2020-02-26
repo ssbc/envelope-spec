@@ -1,18 +1,24 @@
 {
   "type": "box",
-  "description": "box for 2 recipients",
+  "description": "box for 2 recipients (with different key management scheme)",
   "input": {
     "plain_text": "c3F1ZWFtaXNoIG9zc2lmcmFnZSDwn5io",
-    "feed_id": "AAA8aM7vcX9myyy1Z1m8qO1xhUq/QEdzvupc7XskoegetA==",
-    "prev_msg_id": "AQBiozffXq8RAWWBvhQwwS1amBpBHZs6KG5uERb9HN/nGQ==",
-    "msg_key": "TZE1OOQwRJvAg6j7erdrfGCR4hZhci1ZHJwLPou6a4A=",
+    "feed_id": "AADs+IEZyzYx5BsFH0T4qQzOtcow8tOs9VSkc9qOkmUewg==",
+    "prev_msg_id": "AQBAhb4fYKu+U9FArljUr66obbJDvhLZacj3/HE2rAO5aQ==",
+    "msg_key": "Nu/gt8jS/e+w3jk8IhWY7AuPbOEx1MX8FGTltTzFTwc=",
     "recp_keys": [
-      "DahyHXQShQLkS3IAV+lGV2CEYPhcu76ae4BsTjfUh+k=",
-      "wnbJU4ulhTGyvW5cDc04tRqbuBmgnd/1fXdGDu8/7zk="
+      {
+        "key": "S9HUyBzA8tVdSr9/GnpBZ6s2cm8ZMAGah/0Yuvo5L8Q=",
+        "scheme": "envelope-large-symmetric-group"
+      },
+      {
+        "key": "eE3MhgaMDTiYm+bJPPDXOWCCGnYrYxw9z18Txm8ITPU=",
+        "scheme": "envelope-id-based-dm-converted-ed25519"
+      }
     ]
   },
   "output": {
-    "ciphertext": "wschvSs0zEnw4tAVCiKbzyg/oxvtWRItVOb0Ac38fFeM6jMX86c+ap7jnhVQdN5OQna7bGydyBYAcqIrSB+Zxh74Fl4dC0Xworc+DMk0S4RQuYggz0jPDXzjA6pR5h5mcj68HmZymi6T4t0poZlCVO7Vd77+FPcAF56tSn3yhyD3MIHqgkspOA=="
+    "ciphertext": "GqoLYpqPjkukI25Pk4CHgIYX41Xq9i2xtGKhbu6f3u+Ju6/dyyeTEPkuO2P52qUoqy+ix1iQkZEOMCnSdnmcSpVW7pv7xevelN6DF3tys6kFdyi5nQu0MRlZnNIYvoZKJ/dZvlMJr6NsO3m/k6xYdAb7KPwH01JjXsdvGzeJQWNYRiY6NNZZYA=="
   },
   "error_code": null
 }

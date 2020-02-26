@@ -88,15 +88,20 @@ The slots contents are defined by
 ```
 slot_content = xor(
   msg_key,
-  Derive(recipient_key, "slot_key", 32)
+  Derive(recipient_key, ["slot_key", key_mgmt_scheme], 32)
 )
 ```
 
 Where 
 - `Derive` is the same derivation function defined [here](./derive_secret/README.md)
-- `recipient_key` could be:
+- `recipient_key` is one of the shared keys you're encrypting to 
+could be:
   - a private key for a group (symmetric key)
   - a double-ratchet derived key for an individual (this option requires more info in the `header_extensions` + [extensions][e])
+- `key_mgmt_scheme` is the type of `recipient_key`, specifically what sort of key management it's involved in, e.g. :
+  - "envelope-large-symmetric-group"
+  - "envelope-id-based-dm-converted-ed25519"
+  - "envelope-signed-dh-key-curve25519"
 
 Note these slots have no HMAC. This is because if you successfully extract `msg_key` from one of
 these slots you can immediately confirm if you can decrypt the [header_box][hb], which has an HMAC,
