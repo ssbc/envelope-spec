@@ -1,0 +1,24 @@
+# Cloaked Message Id
+
+The envelope spec defines the "cloaked" id for a message as:
+
+```js
+var info = ["cloaked-msg-id", msg_id]
+var cloaked_id = HKDF.Expand(read_key, encode(info), 32)
+```
+
+where:
+- `msg_id` is the publicly readable id for the message which has been enveloped
+- `read_key` is the "read capability" key for the enveloped message (Note this is not the `msg_key`)
+- `encode` is SLP encode (see [encoding/slp.md](../encoding/slp.md))
+
+## Design
+
+The intention is that anyone who has the ability to _read_ a particular message should also be able to
+refernce the message safely in a public setting without revealing which message they were talking about
+to those who can't read the message.
+
+This means we have a safe "handle" which we can use in all contexts without leaking data about 
+e.g. who was involved a particular private communication.
+
+
