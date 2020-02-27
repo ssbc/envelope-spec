@@ -1,0 +1,17 @@
+{
+  "type": "slot",
+  "description": "derive a key_slot for a specific recipient (note feed_id + prev_msg_id are for the feed this message is part of, not the recipient",
+  "input": {
+    "feed_id": "AAA2c4oQnaFt/DbJUkZ8v9JPMo6g8QET1PtnduzBebD56g==",
+    "prev_msg_id": "AQCDfYWJyBIvunWq0neCK5bUuLi3uYJm/CwcWLkswNVktw==",
+    "msg_key": "PYr4LWKaNR1QLXbeAmnuTEYKVrVkOVlYeZzvcrlbs4U=",
+    "recipient": {
+      "key": "h7EmllGo36Q3F0m4h2EuTMD1XBXMVB3TR6G7vQs55fE=",
+      "scheme": "symmetic-group-shared-key-for-example"
+    }
+  },
+  "output": {
+    "key_slot": "g2orA3loCVQtgDijaSX5aiNk954WX4xHThbd4Z9Kgqw="
+  },
+  "error_code": null
+}

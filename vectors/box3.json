@@ -3,12 +3,12 @@
   "description": "box with empty (zero filled) msg_key throws error",
   "input": {
     "plain_text": "c3F1ZWFtaXNoIG9zc2lmcmFnZSDwn5io",
-    "feed_id": "AAC/V4L9PcvsUm5+keXaPxBfdVHx/kNUI3mbrg40Cp9SYg==",
-    "prev_msg_id": "AQBN0Qawq6QpQGChcVEzDr5SK+7e08gPlvb4HsCUDWN50g==",
+    "feed_id": "AADpkWpH0+WGcmQxObK1bJQ4dnguw4rI3Wvl/fSgY3HhSw==",
+    "prev_msg_id": "AQDzqfepnS4LImX1joPJtpBx+g0bYUnlHzBB3foMapMJKA==",
     "msg_key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
     "recp_keys": [
       {
-        "key": "GO2liHGPNL/W19cV7NipNLfWI2obHMDd9iiibKAcJ0g=",
+        "key": "RqN+xwkZxKXFGyf5O7npdahnRwIe50Wk+U1RzzsFrxE=",
         "key_type": "envelope-large-symmetric-group"
       }
     ]

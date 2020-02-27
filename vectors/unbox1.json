@@ -2,10 +2,13 @@
   "type": "unbox",
   "description": "unbox successfully",
   "input": {
-    "ciphertext": "4c6BgUxDbX4qb30EdHsyoWgqphXi2/JQhXt/+qtTxYnEJqWDM+ISLBLFbDS1TT+yVyt+uTqz+CPtdC+fU/QiRQ43pP5pxk8Y3sSnARajJPn+o1EpMmD81ynJ0xdFpnItADj28nVo4j35jyueeMDY2ImB7MqlYFmMHRXEDmjlSW0o7dzUkLAhAQ==",
-    "feed_id": "AABJ2SNFMBq/u18kYW7tXTQSaWxAsCWjTxvm+94lx9sxcA==",
-    "prev_msg_id": "AQBIaYFkC4+vuCQsKWgordy/XehJSjJc/XPkJ1xQfTgRVA==",
-    "recipient_key": "mOalkx+RQMdvUUSqcUbYJxPQDP3g6pA01NLcfTlgClo="
+    "ciphertext": "S3kE28Y1IfAZi5dqtYa00a1+dCIQRRf3wywkekecXeaGvdURjZPjdnmy2SnYKUkV5V2T4/nyIxjSFf7i5PXks35/ktDWv2Un1gmC6mHfjc8FgwraQxSPBBCrAnkGE9uXUU0nl8lMNgmBgMchr0EkXLlUJTLYdyOTX0kTf27J4rytZNJ2ZFW2iA==",
+    "feed_id": "AAB7PRnJ9ERVvTu8r8ZZzO6EvDXGgNarkjMXsQcW1rMnOg==",
+    "prev_msg_id": "AQA0wd3NATswBhaBq0ipASp9K++qRPF2l7VzFkgq81svUw==",
+    "recipient": {
+      "key": "zgZet7AOxS7DziabqEIcRGE+iZNAG/2b4XNZ2QUzcN0=",
+      "scheme": "envelope-id-based-dm-converted-ed25519"
+    }
   },
   "output": {
     "plain_text": "c3F1ZWFtaXNoIG9zc2lmcmFnZSDwn5io"

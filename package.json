@@ -1,5 +1,5 @@
 {
-  "name": "envelope-spec",
+  "name": "@envelope/spec",
   "version": "0.0.1",
   "description": "specification for envelope encryption",
   "homepage": "https://github.com/ssbc/envelope-spec#readme",

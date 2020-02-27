@@ -22,7 +22,6 @@ mapped into a particular key
 -------------|------------- ---|-----------------
  0           | ssb/classic     | ...see JS stack
  1           | ssb/gabby grove | ...see Go implementation
- 2           | ssb/cloaked     | see [private group spec](https://github.com/ssbc/private-groups-spec/tree/master/group/group-id)
 
 For canonical, machine-readable definitions, see `encoding/tfk.json`
 

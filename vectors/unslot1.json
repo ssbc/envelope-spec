@@ -1,0 +1,17 @@
+{
+  "type": "unbox",
+  "description": "from a key_slot, successfully derive the msg_key",
+  "input": {
+    "key_slot": "zle66t8twr3dNc51UFKv9INx4xfADDWTLb5TTQnA4dk=",
+    "feed_id": "AAAZm+s1vUAWK95LcNUez2HpfP/S1NKzAlDs9UpQK20WTA==",
+    "prev_msg_id": "AQBZrhEr6IIpmyMxCgoErLgFtEDdsFBRWkID66kNVz3JIw==",
+    "recipient": {
+      "key": "bDSbpg6s54emhflYFh0OQ4H/gSVzym60KV9IHPPldYE=",
+      "scheme": "symmetic-group-shared-key-for-example"
+    }
+  },
+  "output": {
+    "msg_key": "jR0BgQ8PB9iq7YAvh0A4jZeGMgo7MkWmTFom4nJDIxg="
+  },
+  "error_code": null
+}
