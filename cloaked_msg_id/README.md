@@ -1,4 +1,4 @@
-# Cloaked Id
+# Cloaked Message Id
 
 The envelope spec defines the "cloaked" id for any TFK _message_ as:
 
