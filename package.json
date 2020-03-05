@@ -1,7 +1,8 @@
 {
-  "name": "@envelope/spec",
+  "name": "envelope-spec",
   "version": "0.0.1",
   "description": "specification for envelope encryption",
+  "main": "index.js",
   "homepage": "https://github.com/ssbc/envelope-spec#readme",
   "repository": {
     "type": "git",
