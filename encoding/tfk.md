@@ -19,7 +19,7 @@ mapped into a particular key
  2         | a blob
 
  format code | format          | specification
--------------|------------- ---|-----------------
+-------------|-----------------|---------------------------
  0           | ssb/classic     | ...see JS stack
  1           | ssb/gabby grove | ...see Go implementation
 
