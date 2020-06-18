@@ -21,5 +21,12 @@
     "formats": [
       { "code": 0, "format": "ssb/classic", "key_bytes": 32, "sigil": "&", "suffix": ".sha256" }
     ]
+  },
+  {
+    "code": 3,
+    "type": "diffie-hellman",
+    "formats": [
+      { "code": 0, "format": "curve25519", "key_bytes": 32 }
+    ]
   }
 ]

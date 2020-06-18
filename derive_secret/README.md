@@ -4,7 +4,7 @@ Aa function for deriving new secrets from an initial secret.
 It's defined as:
 
 ```js
-function Derive (key, labels, length) {
+function Derive (key, feed_id, prev_msg_id, labels, length) {
   var info = ['envelope', feed_id, prev_msg_id].concat(labels)
 
   return HKDF.Expand(key, encode(info), length)

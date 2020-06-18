@@ -14,9 +14,12 @@ mapped into a particular key
 
  type code | referencing
 -----------|-------------
- 0         | a feed
- 1         | a message
- 2         | a blob
+ 0         | feed
+ 1         | message
+ 2         | blob
+ 3         | diffie-hellman key
+
+Format depends on the `type` code, be examples of format codes for `type: 0 (feed)`:
 
  format code | format          | specification
 -------------|-----------------|---------------------------
