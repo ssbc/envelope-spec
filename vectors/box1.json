@@ -3,22 +3,22 @@
   "description": "box for 2 recipients (with different key management scheme)",
   "input": {
     "plain_text": "c3F1ZWFtaXNoIG9zc2lmcmFnZSDwn5io",
-    "feed_id": "AAARym2Lrzdde9wRTLlmX7OhiqE4Rpj1CMGJLOq6UHsT5Q==",
-    "prev_msg_id": "AQD0VrBRV+yrdQMgCnJR9fAQ7u/3QLaj6n8SYv/ceTQR9Q==",
-    "msg_key": "RUxWbvrIPCRbROsmz/+EHBQs7YsgY2IFoGwXH4fkJJY=",
+    "feed_id": "AACv6zOVZsd3N5mVYJs7MnmMRu08DfGmqG70+0mL0SfHUQ==",
+    "prev_msg_id": "AQBP+SmjFm1B7PJ7bSaIa3JhkqMYdmlIKUtodYfE9o8/qw==",
+    "msg_key": "Sio94NHxP3k+Svx7d1VReGxHdh2T9wssofb1v7Lt9ao=",
     "recp_keys": [
       {
-        "key": "Mb0zeTH+VHvq250TgssBpccHifcptMHwqLPmGnDmKa0=",
+        "key": "gVv33+Jo5348A1XJrA+hoMxYiee13QlxNpm88yHwzRY=",
         "scheme": "envelope-large-symmetric-group"
       },
       {
-        "key": "n/4F2fvDuR/znxVE6m0MHODElXkx7cmrgndnnYnEh3U=",
+        "key": "beAVypscgWbDyQw6oDUwX9Huf/5dwrlhE/OrStRsU0g=",
         "scheme": "envelope-id-based-dm-converted-ed25519"
       }
     ]
   },
   "output": {
-    "ciphertext": "8pB7emD0tOzSUsIkcK7oJ5uSkFkQ3SLcF0YX4LOrEX/q+CBCHtcSWN/LX4A6b3EhpmWKlz82/7B2cjdbaeWam+YLBOoyI9j+/XU0eZs50vWJFcpVAom2NpWTMc4HaCE0O/3uABOrdkO7X4xXvwPaY+AXSYHVJvzyNBr8lICossW7NF1sWOiBCg=="
+    "ciphertext": "l0dEDrXwMx1VcKbnhrRy51jAtWyg5F23/6TZjWu00FyaNA+yTiRvO16ht93L18NmNWy1/KyjgKm++aiVqlE7sCqRT62OxLopHXVes/lWH9S97fhZHKCZg/vxZgdIkpefvNl/qsHerry0SnS7m5OoffpyE0wYzKqUbcMHnUyFAbtmgFvj69f+Ng=="
   },
   "error_code": null
 }

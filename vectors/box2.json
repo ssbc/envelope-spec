@@ -3,12 +3,12 @@
   "description": "cannot box an empty plain_text buffer / string",
   "input": {
     "plain_text": "",
-    "feed_id": "AADGEYxrjdTG4GHwDyH6EDLWqazV8DOxcNYg25AVwhEerw==",
-    "prev_msg_id": "AQCIKW3Et9IWzObl/TRUoRNbx4u22UcQesSKhXCSgSYp1w==",
-    "msg_key": "kV2G/NEh45hG7yBCzTANJqs3vbQw2Z3eJU77/gN6YM8=",
+    "feed_id": "AAAsgcjnPAOQSxcM4kFD7S3iDmZv+8BUqqHd+pWopMo9ZA==",
+    "prev_msg_id": "AQAuUdkuV7hY0W7fnJKrXrXDcbYjs1VTj+b8ely7flfzQQ==",
+    "msg_key": "DJ6Y4HJu90aGLWKAvNFZTZQEo+vAjcuQ5GVS34n1TUI=",
     "recp_keys": [
       {
-        "key": "aJ+kkKNnNQ65F/M16b3jyL92hD93wb5DWj5Af7nhtpc=",
+        "key": "r2m7cwbK2vdcBV/vngvnLqvKGWeRl6PLsxLYJUjxB5s=",
         "key_type": "envelope-large-symmetric-group"
       }
     ]

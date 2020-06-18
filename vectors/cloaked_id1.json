@@ -2,11 +2,11 @@
   "type": "cloaked_id",
   "description": "derive a cloaked message id following the spec. NOTE all ids are in TFK format",
   "input": {
-    "public_msg_id": "AQCEJ+rXqg3X2JZQqWdMnG5M4xk4mXowenjPMW1Z9C7K0A==",
-    "read_key": "s7jr2N7DlykGjCaLZaxyVfCII8YXrwIQQL+Rk9BM/CE="
+    "public_msg_id": "AQCNWx2fFuNuL70fylieKWgvE8gpOLIwZ+pWcZW68VdKHg==",
+    "read_key": "PARfkPyOdMNmyi3ZVAThFrPSPZAvE6yohSJRg+snvb4="
   },
   "output": {
-    "cloaked_msg_id": "nak48UgQS1/P7lTRSbKJU9JDYiRvIp6M44Sb+myiACA="
+    "cloaked_msg_id": "uRCvZ9jW7ouuBdygpmuolyD8iubre+wYU0rf3vHdCiY="
   },
   "error_code": null
 }
