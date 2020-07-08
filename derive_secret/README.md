@@ -14,6 +14,13 @@ function Derive (key, feed_id, prev_msg_id, labels, length) {
 - `key` is a cryptographic key you're deriving from
 - `labels` is an Array of strings
 - `feed_id` and `prev_msg_id` are encoded in with the binary [type-format-key (TFK) encoding](../encoding/tfk.md)
+  - if there is no `prev_msg_id` (because you're publishing the first message for this feed), we say the "key" part of the tfk encoding for `prev_msg_id` is an empty buffer, e.g.
+    ```
+      01 00  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+       │  │  └────────────────────┬────────────────────────────────────────────────────────────────────────┘
+    type  │                hex encoded key
+         format 
+    ```
 - `HKDF.Expand` is a hmac-like function which is specifically designed to generate random buffers of a given length.
   - we specify `sha256` for hashing in HKDF-Expand 
   - example of a node.js implementation : [futoin-hkdf](https://www.npmjs.com/package/futoin-hkdf#hkdfexpandhash-hash_len-prk-length-info-%E2%87%92-buffer)
