@@ -14,7 +14,7 @@ function Derive (key, feed_id, prev_msg_id, labels, length) {
 - `key` is a cryptographic key you're deriving from
 - `labels` is an Array of strings
 - `feed_id` and `prev_msg_id` are encoded in with the binary [type-format-key (TFK) encoding](../encoding/tfk.md)
-  - if there is no `prev_msg_id` (because you're publishing the first message for this feed), we say the "key" part of the tfk encoding for `prev_msg_id` is an empty buffer, e.g.
+  - if there is no `prev_msg_id` (because you're publishing the first message for this feed), we say the "key" part of the tfk encoding for `prev_msg_id` is a zero buffer of the same size, e.g.
     ```
       01 00  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
        │  │  └────────────────────┬────────────────────────────────────────────────────────────────────────┘
