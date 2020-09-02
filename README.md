@@ -1,6 +1,4 @@
-# envelope spec
-
-:warning: **DRAFT STATUS** :warning:
+# envelope spec | version 1.0.0
 
 This is a spec for encrypting messages to groups of people.
 Initially it will support communication for large groups which share a public key
