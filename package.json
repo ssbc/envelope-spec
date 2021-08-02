@@ -14,5 +14,8 @@
     "cryptography"
   ],
   "author": "mixmix",
-  "license": "AGPL-3.0"
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "ssb-bfe": "^1.0.1"
+  }
 }
