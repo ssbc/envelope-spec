@@ -1,0 +1,2 @@
+- unbox-group1.json and unbox-group2.json are tested in ssb-box2  https://github.com/ssbc/ssb-box2/pull/35
+- unbox1.json is tested in envelope-js https://github.com/ssbc/envelope-js/blob/8532da86ea84f79ae2532b17e2768586e1c40da6/test/unbox.test.js
